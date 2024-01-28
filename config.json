@@ -1,0 +1,18 @@
+{
+  "footer": "\n\tcd {{projectName}}\n\t{{packageManager}} run dev",
+  "prompts": [
+    {
+      "name": "eslint",
+      "type": "toggle",
+      "message": "Do you want to use ESLint?",
+      "initial": false
+    }
+  ],
+  "actions": [
+    {
+      "type": "removeFile",
+      "files": [".eslintrc.json"],
+      "when": "eslint"
+    }
+  ]
+}
