@@ -1,5 +1,5 @@
 {
-  "footer": "\n\tcd {{projectName}}\n\t{{packageManager}} run dev",
+  "footer": "\n\tcd {{@name}}\n\t{{@packageManager}} run dev",
   "prompts": [
     {
       "name": "eslint",
@@ -10,9 +10,9 @@
   ],
   "actions": [
     {
-      "type": "removeFile",
-      "files": [".eslintrc.json"],
-      "when": "eslint"
+      "type": "remove",
+      "command": "rm .eslint.json",
+      "when": "noEslint"
     }
   ]
 }
