@@ -10,7 +10,7 @@
   ],
   "actions": [
     {
-      "type": "remove",
+      "type": "exec",
       "command": "rm .eslint.json",
       "when": "noEslint"
     }
