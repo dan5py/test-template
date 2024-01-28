@@ -11,7 +11,7 @@
   "actions": [
     {
       "type": "exec",
-      "command": "rm .eslint.json",
+      "command": "rm .eslintrc.json",
       "when": "noEslint"
     }
   ]
